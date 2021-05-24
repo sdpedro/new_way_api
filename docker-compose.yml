@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:  
+    db:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: "Postgres2021!"
+        ports:
+            - "5432:5432"
+    app:
+        build: .
+        volumes:
+            - .:/usr/app
+        working_dir: /usr/app
+        ports:
+            - 3000:3000
+        depends_on:
+            - db
