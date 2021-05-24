@@ -1,0 +1,22 @@
+{
+    "name": "new_way_api",
+    "version": "1.0.0",
+    "description": "Responsável por receber as mensagem e armazenar ",
+    "main": "./bin/server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./bin/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "pg": "^8.6.0",
+        "sequelize": "^6.6.2"
+    },
+    "devDependencies": {
+        "sequelize-cli": "^6.2.0"
+    }
+}
